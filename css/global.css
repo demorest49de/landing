@@ -11,11 +11,11 @@ html {
 }
 
 body {
-  min-width: 320px;
-  min-height: 100vh;
+  min-width: 375px;
+  min-height: 100svh;
   font-size: 16px;
-  background: #E5E5E5;
-  color: #000000;
+  background-color: #e9ded4;
+  color: #313131;
 }
 
 img {
@@ -50,8 +50,4 @@ ul, ol {
   height: 1px !important;
   width: 1px !important;
   overflow: hidden;
-}
-
-.hide-element{
-  display: none;
 }

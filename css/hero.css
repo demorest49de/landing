@@ -1,0 +1,57 @@
+@font-face {
+  font-family: "Merriweather";
+  src: url("../public/font/Merriweather/Merriweather-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+}
+
+.hero {
+  padding: 26px 0 0 158px
+}
+
+.hero__container::before {
+  content: "";
+  position: absolute;
+  background-image: url("/public/bcg/bcg.png");
+  background-size: cover;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 700px;
+  /*opacity: 0.9;*/
+  z-index: -1;
+  mix-blend-mode: color-burn;
+}
+
+.hero__wrapper {
+padding-left: 191.5px;
+}
+
+.hero__logo{
+  margin-bottom: 59px;
+}
+
+.hero__text-block {
+  font-family: 'Merriweather';
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 110%;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.hero__text:nth-child(1) {
+  max-width: 542px;
+}
+
+.hero__text:nth-child(2) {
+  padding-left:87px;
+}
+
+.hero__text:nth-child(3) {
+  padding-left:29px;
+}
+
+.hero__text-small{
+
+}
