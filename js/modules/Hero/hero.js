@@ -31,13 +31,25 @@ for (const text of textArray) {
   textBlock.append(paragraph);
 }
 
-const textContent = 'Оплатите взнос на телеграммы для организации Международного васюкинского турнира по шахматам';
-const smallText = createParagraph(parentName, textContent, 'text-small');
+
+
+const textArray2 = ['Оплатите взнос на телеграммы для организации',
+  'Международного васюкинского турнира по шахматам'];
+
+const elements = textArray2.map(text => {
+  return createParagraph(parentName, text, 'text-small');
+})
+
+// const textContent1 = ;
+// const smallText1 = createParagraph(parentName, textContent1, 'text-small');
+//
+// const textContent = ;
+// const smallText2 = createParagraph(parentName, textContent2, 'text-small');
 
 
 
 
-wrapper.append(logo, title, textBlock, smallText);
+wrapper.append(logo, title, textBlock, ...elements);
 
 
 export const getHero = () => hero;
