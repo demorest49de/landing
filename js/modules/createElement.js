@@ -1,29 +1,33 @@
 export const createElement = (elem) => document.createElement(elem);
 
 
-export const createSection = (sectionName) => {
-  
+export const createSection = (sectionName, classes = undefined) => {
   const section = createElement('section');
   addClass(section, sectionName);
-  const container = createContainer(sectionName);
+  const container = createContainer(sectionName, classes);
   section.container = container;
   section.append(container);
   return section;
 };
 
 
-const addClass = (element, names) => {
-  if (Array.isArray(names)) {
-    element.classList.add(...names);
-  } else {
-    element.classList.add(names);
+const addClass = (element, name, classes = undefined) => {
+  if (Array.isArray(classes)) {
+    element.classList.add(name, ...classes);
+  }
+  if(typeof classes === 'string') {
+    element.classList.add(name, classes);
+  }
+  if(typeof classes === `undefined`) {
+    element.classList.add(name);
   }
 };
 
-const createContainer = (text) => {
+const createContainer = (text, classes = undefined) => {
+  debugger
   const container = document.createElement('div');
   const name = text + `__container`;
-  addClass(container, name);
+  addClass(container, name, classes);
   return container;
 };
 

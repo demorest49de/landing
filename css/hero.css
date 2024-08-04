@@ -20,7 +20,11 @@
 }
 
 .hero {
-  padding: 26px 0 0 158px
+  padding-top: 26px;
+}
+/*todo  utochnit'*/
+.hero__container{
+  padding: 0 158px
 }
 
 .hero__container::before {
