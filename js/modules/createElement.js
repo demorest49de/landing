@@ -1,38 +1,33 @@
+import {getContainer} from "./Hero/container.js";
+
 export const createElement = (elem) => document.createElement(elem);
 
 
-export const createSection = (sectionName, classes = undefined) => {
+export const createSection = (sectionName) => {
   const section = createElement('section');
-  addClass(section, sectionName);
-  const container = createContainer(sectionName, classes);
+  addClass(section, sectionName, '');
+  const container = getContainer(sectionName)
   section.container = container;
   section.append(container);
   return section;
 };
 
 
-const addClass = (element, name, classes = undefined) => {
-  if (Array.isArray(classes)) {
-    element.classList.add(name, ...classes);
+export const addClass = (element, parentName, className, classNames = undefined) => {
+  if (classNames && Array.isArray(classNames)) {
+    element.classList.add(`${parentName}__${className}`, ...classNames);
   }
-  if(typeof classes === 'string') {
-    element.classList.add(name, classes);
+  if(typeof classNames === 'string') {
+    element.classList.add(parentName, className);
   }
-  if(typeof classes === `undefined`) {
-    element.classList.add(name);
+  if(typeof classNames === `undefined` && className.length === 0) {
+    element.classList.add(parentName);
   }
 };
 
-const createContainer = (text, classes = undefined) => {
-  const container = document.createElement('div');
-  const name = text + `__container`;
-  addClass(container, name, classes);
-  return container;
-};
-
-export const createSvg = (svgHTML) => {
-  const svgContainer = createElement('div');
+export const createSvg = (svgHTML, parentName, className) => {
   
+  const svgContainer = createDiv(parentName, className)
   svgContainer.innerHTML = svgHTML;
   return svgContainer;
 };
@@ -40,6 +35,7 @@ export const createSvg = (svgHTML) => {
 export const createParagraph = (parentName, text, className) => {
   const paragraph = createElement('p');
   paragraph.textContent = text;
+  // addClass(paragraph, className)
   paragraph.classList.add(`${parentName}__${className}`)
   return paragraph;
 };

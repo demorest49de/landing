@@ -126,8 +126,7 @@ export const getBigYellowCircle = (parentName) => {
     '</g>\n' +
     '</svg>'
   //#endregion svgHMTL
-  
-  const circle = createSvg(svgHTML)
-  circle.classList.add(`${parentName}__big-yellow-circle`);
+  const className = `big-yellow-circle`
+  const circle = createSvg(svgHTML, parentName, className)
   return circle;
 };

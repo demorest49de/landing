@@ -3,11 +3,10 @@ import {getLogo} from "./logo.js";
 import {getTextBlock} from "./textBlock.js";
 import {getTextSmallBlock} from "./textSmallBlock.js";
 import {getButtons} from "./buttons.js";
+import {getBigYellowCircle} from "./bigYellowCircle.js";
 
 const parentName = 'hero';
-const hero = createSection(parentName,
-  'container'
-);
+const hero = createSection(parentName);
 
 const wrapper = createDiv(parentName, "wrapper");
 hero.container.appendChild(wrapper);
@@ -24,7 +23,7 @@ const textSmallBlock = getTextSmallBlock(parentName);
 
 const buttonsBlock = getButtons(parentName);
 
-
+const bigYellowCircle = getBigYellowCircle(parentName)
 
 wrapper.append(logo, title, textBlock, textSmallBlock, buttonsBlock);
 
