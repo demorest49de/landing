@@ -6,7 +6,7 @@ import {getButtons} from "./buttons.js";
 
 const parentName = 'hero';
 const hero = createSection(parentName,
-  ['container']
+  'container'
 );
 
 const wrapper = createDiv(parentName, "wrapper");

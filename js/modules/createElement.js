@@ -24,7 +24,6 @@ const addClass = (element, name, classes = undefined) => {
 };
 
 const createContainer = (text, classes = undefined) => {
-  debugger
   const container = document.createElement('div');
   const name = text + `__container`;
   addClass(container, name, classes);
