@@ -12,6 +12,13 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Golos Text";
+  src: url("../public/font/Golos_Text/GolosText-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+}
+
 .hero {
   padding: 26px 0 0 158px
 }
@@ -68,10 +75,60 @@
   font-feature-settings: 'pnum' on, 'lnum' on;
 }
 
-.hero__text-small:nth-last-child(2) {
-  padding-left: 50px;
+.hero__text-small-block {
+  margin-bottom: 40px;
 }
 
-.hero__text-small:nth-last-child(1) {
-  padding-left: 25px;
+.hero__text-small:nth-child(1) {
+  padding-left: 51px;
+}
+
+.hero__text-small:nth-child(2) {
+  padding-left: 26px;
+}
+
+.hero__buttons-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 263px;
+  padding-right: 1px;
+  gap: 12px;
+}
+
+.hero__button {
+
+  width: 263px;
+  height: 72px;
+
+  background: #1F1F1F;
+  border-radius: 66px;
+
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+
+  font-family: 'Golos Text';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  color: #FFFFFF;
+}
+
+.hero__button:nth-child(1){
+  padding: 10px 56px 10px 49px;
+}
+
+.hero__button:nth-child(2){
+  padding: 10px 49px;
+  color: #1F1F1F;
+  background-color: transparent;
+  border: 2px solid #1F1F1F;
+}
+
+.hero__button:nth-child(1):hover{
+
+}
+
+.hero__button:nth-child(2):hover{
 }

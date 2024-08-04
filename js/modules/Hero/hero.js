@@ -1,9 +1,9 @@
-import {createElement, createSvg, createSection, createParagraph} from "../createElement.js";
+import {createElement, createSvg, createSection, createParagraph, createButtons, createDiv} from "../createElement.js";
 
 const parentName = 'hero';
 const hero = createSection(parentName);
-const wrapper = createElement("div");
-wrapper.className = `${parentName}__wrapper`;
+
+const wrapper = createDiv(parentName, "wrapper");
 hero.container.appendChild(wrapper);
 
 const title = createElement('h1');
@@ -23,33 +23,39 @@ logo.classList.add(`${parentName}__logo`);
 
 const textArray = ['Превратите уездный город', 'в столицу', 'земного шара'];
 
-const textBlock = createElement('div');
-textBlock.classList.add(`${parentName}__text-block`);
+
+const textBlock = createDiv(parentName, "text-block");
 
 for (const text of textArray) {
   const paragraph = createParagraph(parentName, text, 'text');
   textBlock.append(paragraph);
 }
 
-
-
 const textArray2 = ['Оплатите взнос на телеграммы для организации',
   'Международного васюкинского турнира по шахматам'];
 
-const elements = textArray2.map(text => {
+const paragraphs = textArray2.map(text => {
   return createParagraph(parentName, text, 'text-small');
+});
+
+const textSmallBlock = createDiv(parentName, 'text-small-block')
+paragraphs.forEach(p =>{
+  textSmallBlock.appendChild(p)
 })
 
-// const textContent1 = ;
-// const smallText1 = createParagraph(parentName, textContent1, 'text-small');
-//
-// const textContent = ;
-// const smallText2 = createParagraph(parentName, textContent2, 'text-small');
+const textArray3 = ['Поддержать шахматную мысль', 'Подробнее о турнире'];
+
+const buttons = textArray3.map(text => {
+  return createButtons(parentName, text, 'button');
+});
+
+const buttonsBlock = createDiv(parentName, "buttons-block");
+buttons.forEach(button => {
+  buttonsBlock.appendChild(button);
+});
 
 
-
-
-wrapper.append(logo, title, textBlock, ...elements);
+wrapper.append(logo, title, textBlock, textSmallBlock, buttonsBlock);
 
 
 export const getHero = () => hero;
