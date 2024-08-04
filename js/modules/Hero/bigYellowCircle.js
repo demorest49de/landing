@@ -1,7 +1,8 @@
 import {createDiv, createSvg} from "../createElement.js";
 
 export const getBigYellowCircle = (parentName) => {
-  
+
+ 
   //#region svgHTML
   const svgHTML = '<svg width="777" height="675" viewBox="0 0 777 675" fill="none" xmlns="http://www.w3.org/2000/svg">\n' +
     '<g style="mix-blend-mode:overlay">\n' +
@@ -126,7 +127,11 @@ export const getBigYellowCircle = (parentName) => {
     '</g>\n' +
     '</svg>'
   //#endregion svgHMTL
-  const className = `big-yellow-circle-block`
-  const circleBlock = createDiv(parentName, className)
-  return circleBlock;
+  const className = `big-yellow-circle-sub-block`
+  const circleSubBlock = createDiv(parentName, className)
+  
+  const block = createDiv(parentName, `big-yellow-circle-block`);
+  block.appendChild(circleSubBlock)
+  
+  return block;
 };

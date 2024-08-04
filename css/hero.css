@@ -152,29 +152,28 @@
 /*#endregion*/
 
 .hero__big-yellow-circle-block {
+
+}
+
+.hero__big-yellow-circle-sub-block {
   width: 660px;
   height: 660px;
   background-color: #FBCE51;
-  /*opacity: 0.9;*/
   border-radius: 50%;
   position: relative;
-  top: 0;
-  right: 0px;
+  /*top: 0;*/
+  /*right: 0px;*/
   mix-blend-mode: color-burn;
 }
 
-.hero__big-yellow-circle-block:after {
+.hero__big-yellow-circle-sub-block:after {
   content: "";
   position: absolute;
   background-image: url("/public/img/yellow-circle.svg");
   background-size: contain;
   background-repeat: no-repeat;
   top: 0px;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
   width: 100%;
   height: 700px;
   opacity: 0.8;
-  /*mix-blend-mode: overlay;*/
 }
