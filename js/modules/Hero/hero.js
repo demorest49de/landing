@@ -7,9 +7,9 @@ import {getBigYellowCircle} from "./bigYellowCircle.js";
 
 const parentName = 'hero';
 const hero = createSection(parentName);
-
+const heroContainer = hero.container;
 const wrapper = createDiv(parentName, "wrapper");
-hero.container.appendChild(wrapper);
+heroContainer.appendChild(wrapper);
 
 const title = createElement('h1');
 title.textContent = 'Превратите уездный город в столицу земного шара';
@@ -23,9 +23,9 @@ const textSmallBlock = getTextSmallBlock(parentName);
 
 const buttonsBlock = getButtons(parentName);
 
-const bigYellowCircle = getBigYellowCircle(parentName)
+const bigYellowCircleBlock = getBigYellowCircle(parentName)
 
-wrapper.append(logo, title, textBlock, textSmallBlock, buttonsBlock);
-
+wrapper.append(logo, title, textBlock, textSmallBlock, buttonsBlock, );
+heroContainer.append(bigYellowCircleBlock)
 
 export const getHero = () => hero;

@@ -37,19 +37,18 @@ export const createParagraph = (parentName, text, className) => {
   const paragraph = createElement('p');
   paragraph.textContent = text;
   addClass(paragraph, parentName, className);
-  // paragraph.classList.add(`${parentName}__${className}`)
   return paragraph;
 };
 
 export const createButtons = (parentName, text, className) => {
   const button = createElement('button');
   button.innerText = text;
-  button.classList.add(`${parentName}__${className}`);
+  addClass(button, parentName, className);
   return button;
 };
 
 export const createDiv = (parentName, className) => {
   const div = createElement('div');
-  div.classList.add(`${parentName}__${className}`);
+  addClass(div, parentName, className);
   return div;
 };

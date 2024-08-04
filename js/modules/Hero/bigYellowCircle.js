@@ -1,4 +1,4 @@
-import {createSvg} from "../createElement.js";
+import {createDiv, createSvg} from "../createElement.js";
 
 export const getBigYellowCircle = (parentName) => {
   
@@ -126,7 +126,7 @@ export const getBigYellowCircle = (parentName) => {
     '</g>\n' +
     '</svg>'
   //#endregion svgHMTL
-  const className = `big-yellow-circle`
-  const circle = createSvg(svgHTML, parentName, className)
-  return circle;
+  const className = `big-yellow-circle-block`
+  const circleBlock = createDiv(parentName, className)
+  return circleBlock;
 };

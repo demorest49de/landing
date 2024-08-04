@@ -22,9 +22,11 @@
 .hero {
   padding-top: 26px;
 }
-/*todo  utochnit'*/
-.hero__container{
-  padding: 0 158px
+
+.hero__container {
+  padding: 0 158px;
+  display: inline-flex;
+  gap: 63.5px;
 }
 
 .hero__container::before {
@@ -40,10 +42,13 @@
   z-index: -1;
   mix-blend-mode: color-burn;
 }
-
+/*//todo utochnit' */
 .hero__wrapper {
   padding-left: 191.5px;
+  height: 673px;
 }
+
+/*#region */
 
 .hero__logo {
   margin-bottom: 59px;
@@ -141,4 +146,31 @@
   background-color: #1F1F1F;
   color: #FFFFFF;
   transition: all 0.3s ease;
+}
+/*#endregion*/
+
+.hero__big-yellow-circle-block {
+  width: 700px;
+  height: 700px;
+  background-color: #FBCE51;
+  opacity: 1;
+  border-radius: 50%;
+  /*position: absolute;*/
+  top: 0;
+  right: 50px;
+  mix-blend-mode: color-burn;
+}
+
+.hero__big-yellow-circle-block:after {
+  content: "";
+  position: absolute;
+  background-image: url("/public/img/yellow-circle.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 20px;
+  width: 100%;
+  height: 700px;
+  mix-blend-mode: overlay;
+  /*background-color: #FBCE51;*/
+  /*overflow: hidden;*/
 }
