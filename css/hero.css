@@ -113,22 +113,28 @@
   font-size: 16px;
   line-height: 130%;
   color: #FFFFFF;
+  transition: all 0.5s ease;
 }
 
-.hero__button:nth-child(1){
+.hero__button:nth-child(1) {
   padding: 10px 56px 10px 49px;
 }
 
-.hero__button:nth-child(2){
+.hero__button:nth-child(2) {
   padding: 10px 49px;
   color: #1F1F1F;
   background-color: transparent;
   border: 2px solid #1F1F1F;
 }
 
-.hero__button:nth-child(1):hover{
-
+.hero__button:nth-child(1):hover {
+  background-color: #FBCE51;
+  color: #1F1F1F;
+  transition: all 0.3s ease;
 }
 
-.hero__button:nth-child(2):hover{
+.hero__button:nth-child(2):hover {
+  background-color: #1F1F1F;
+  color: #FFFFFF;
+  transition: all 0.3s ease;
 }
