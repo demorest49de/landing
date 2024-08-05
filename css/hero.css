@@ -1,4 +1,5 @@
 
+
 .hero {
   padding-top: 26px;
   overflow-y: hidden;
@@ -152,21 +153,9 @@
   left: 60px;
   right: 0;
   bottom: 0;
-  transition: transform 0.5s ease;
 }
 
-.hero__circle_rotate {
-  animation: rotateClockwise 10s forwards;
-}
 
-@keyframes rotateClockwise {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
 #hero__circle-svg {
   width: 777px;
@@ -180,16 +169,16 @@
   position: relative;
 }
 
-.hero__city svg {
-  width: 1623.5px;
+.hero__city svg{
+  width:1623.5px;
   height: 452.5px;
   position: absolute;
   bottom: -10px;
   right: -171px;
 }
 
-.hero__path svg {
-  width: 1603.71px;
+.hero__path svg{
+  width:1603.71px;
   height: 463.82px;
   position: absolute;
   bottom: -12px;
