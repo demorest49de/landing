@@ -8,6 +8,7 @@ import {getCity} from "./city.js";
 
 const parentName = 'hero';
 const hero = createSection(parentName);
+
 const heroContainer = hero.container;
 const wrapper = createDiv(parentName, "wrapper");
 heroContainer.appendChild(wrapper);
