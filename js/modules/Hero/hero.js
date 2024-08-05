@@ -31,7 +31,6 @@ const city = getCity(parentName);
 
 wrapper.append(logo, title, textBlock, textSmallBlock, buttonsBlock,);
 heroContainer.append(bigYellowCircleBlock);
-// heroContainer.append(...city)
-// heroContainer.append(city);
+heroContainer.append(...city)
 
 export const getHero = () => hero;
