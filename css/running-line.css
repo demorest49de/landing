@@ -17,7 +17,7 @@
 
 .running-line__conveer {
   display: inline-block;
-  /*animation: running-line__conveer 20s linear infinite;*/
+  animation: running-line__conveer 30s linear infinite;
   width: fit-content;
   font-family: 'Merriweather';
   font-weight: 400;
@@ -30,12 +30,17 @@
 
 @keyframes running-line__conveer {
   0% {
-    transform: translateX(100%);
+    transform: translateX(86%);
   }
   100% {
     transform: translateX(-100%);
   }
 }
+
+
+
+
+
 
 
 
