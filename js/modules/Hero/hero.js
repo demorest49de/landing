@@ -2,9 +2,10 @@ import {createElement, createSection, createDiv} from "../createElement.js";
 import {getLogo} from "./logo.js";
 import {getTextBlock} from "./textBlock.js";
 import {getTextSmallBlock} from "./textSmallBlock.js";
-import {getButtons} from "./buttons.js";
+import {getAnchors} from "./anchors.js";
 import {getBigYellowCircle} from "./bigYellowCircle.js";
 import {getCity} from "./city.js";
+import {getRunningLine} from "./runningLine.js";
 
 const parentName = 'hero';
 const hero = createSection(parentName);
@@ -23,14 +24,16 @@ const textBlock = getTextBlock(parentName);
 
 const textSmallBlock = getTextSmallBlock(parentName);
 
-const buttonsBlock = getButtons(parentName);
+const buttonsBlock = getAnchors(parentName);
 
 const bigYellowCircleBlock = getBigYellowCircle(parentName);
 
 const city = getCity(parentName);
 
+const line = getRunningLine(parentName)
+
 wrapper.append(logo, title, textBlock, textSmallBlock, buttonsBlock,);
-heroContainer.append(bigYellowCircleBlock);
-heroContainer.append(...city)
+heroContainer.append(bigYellowCircleBlock, ...city, line);
+
 
 export const getHero = () => hero;

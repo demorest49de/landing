@@ -105,6 +105,8 @@
   max-width: 263px;
   padding-right: 1px;
   gap: 12px;
+  position: relative;
+  z-index: 1;
 }
 
 .hero__button {
@@ -125,14 +127,15 @@
   line-height: 130%;
   color: #FFFFFF;
   transition: all 0.5s ease;
+  text-align: center;
 }
 
 .hero__button:nth-child(1) {
-  padding: 10px 56px 10px 49px;
+  padding: 14px 56px 10px 49px;
 }
 
 .hero__button:nth-child(2) {
-  padding: 10px 49px;
+  padding: 13px 49px;
   color: #1F1F1F;
   background-color: transparent;
   border: 2px solid #1F1F1F;
@@ -196,6 +199,10 @@
   position: absolute;
   bottom: -12px;
   right: -149px;
+}
+
+.hero__running-line-block{
+
 }
 
 

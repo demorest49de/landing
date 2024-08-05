@@ -56,6 +56,14 @@ export const createButtons = (parentName, text, className) => {
   return button;
 };
 
+export const createAnchors = (parentName, attr, className) => {
+  const anchor = createElement('a');
+  anchor.textContent = attr.text;
+  anchor.href = attr.href;
+  addClass(anchor, parentName, className);
+  return anchor;
+};
+
 export const createDiv = (parentName, className) => {
   const div = createElement('div');
   addClass(div, parentName, className);
