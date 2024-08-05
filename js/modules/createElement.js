@@ -26,12 +26,23 @@ export const addClass = (element, parentName, className, classNames = undefined)
   }
 };
 
-export const createSvg = (svgHTML, parentName, className) => {
-  
+export const createSvg = (svgPath, parentName, className) => {
   const svgContainer = createDiv(parentName, className);
-  svgContainer.innerHTML = svgHTML;
+  loadSVG(svgPath,svgContainer)
   return svgContainer;
 };
+
+export function loadSVG(svgUrl, svgContainer) {
+  fetch(svgUrl)
+    .then(response => response.text())
+    .then(svgText => {
+      svgContainer.innerHTML = svgText;
+      
+    })
+    .catch(error => console.error('Error loading SVG:', error));
+}
+
+
 
 export const createParagraph = (parentName, text, className) => {
   const paragraph = createElement('p');
