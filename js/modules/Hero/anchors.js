@@ -12,10 +12,10 @@ export const getAnchors = (parentName) => {
     },];
   
   const buttons = attributeArray.map(attr => {
-    return createAnchors(parentName, attr, 'button');
+    return createAnchors(parentName, attr, 'link');
   });
   
-  const buttonsBlock = createDiv(parentName, "buttons-block");
+  const buttonsBlock = createDiv(parentName, "link-block");
   buttons.forEach(button => {
     buttonsBlock.appendChild(button);
   });

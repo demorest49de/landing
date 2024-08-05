@@ -98,7 +98,7 @@
   padding-left: 26px;
 }
 
-.hero__buttons-block {
+.hero__link-block {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -109,7 +109,7 @@
   z-index: 1;
 }
 
-.hero__button {
+.hero__link {
 
   width: 263px;
   height: 72px;
@@ -130,24 +130,24 @@
   text-align: center;
 }
 
-.hero__button:nth-child(1) {
+.hero__link:nth-child(1) {
   padding: 14px 56px 10px 49px;
 }
 
-.hero__button:nth-child(2) {
+.hero__link:nth-child(2) {
   padding: 13px 49px;
   color: #1F1F1F;
   background-color: transparent;
   border: 2px solid #1F1F1F;
 }
 
-.hero__button:nth-child(1):hover {
+.hero__link:nth-child(1):hover {
   background-color: #FBCE51;
   color: #1F1F1F;
   transition: all 0.3s ease;
 }
 
-.hero__button:nth-child(2):hover {
+.hero__link:nth-child(2):hover {
   background-color: #1F1F1F;
   color: #FFFFFF;
   transition: all 0.3s ease;

@@ -24,7 +24,7 @@ const textBlock = getTextBlock(parentName);
 
 const textSmallBlock = getTextSmallBlock(parentName);
 
-const buttonsBlock = getAnchors(parentName);
+const anchorsBlock = getAnchors(parentName);
 
 const bigYellowCircleBlock = getBigYellowCircle(parentName);
 
@@ -32,7 +32,7 @@ const city = getCity(parentName);
 
 const line = getRunningLine(parentName)
 
-wrapper.append(logo, title, textBlock, textSmallBlock, buttonsBlock,);
+wrapper.append(logo, title, textBlock, textSmallBlock, anchorsBlock,);
 heroContainer.append(bigYellowCircleBlock, ...city, line);
 
 
