@@ -3,7 +3,8 @@ import {getConveer} from "./conveer.js";
 
 
 const parentName = 'running-line';
-const line = createSection(parentName);
+
+const line = createSection(parentName, false);
 const lineContainer = line.container;
 
 

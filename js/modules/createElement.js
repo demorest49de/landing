@@ -3,12 +3,15 @@ import {getContainer} from "./Hero/container.js";
 export const createElement = (elem) => document.createElement(elem);
 
 
-export const createSection = (sectionName) => {
+export const createSection = (sectionName, hasContainer = true) => {
   const section = createElement('section');
   addClass(section, sectionName, '');
-  const container = getContainer(sectionName);
-  section.container = container;
-  section.append(container);
+  
+    const container = getContainer(sectionName, hasContainer);
+    section.container = container;
+    section.append(container);
+  
+  
   return section;
 };
 
@@ -28,7 +31,7 @@ export const addClass = (element, parentName, className, classNames = undefined)
 
 export const createSvg = (svgPath, parentName, className) => {
   const svgContainer = createDiv(parentName, className);
-  loadSVG(svgPath,svgContainer)
+  loadSVG(svgPath, svgContainer);
   return svgContainer;
 };
 

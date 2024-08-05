@@ -1,9 +1,12 @@
 import {addClass, createDiv} from "../createElement.js";
 
 
-export const getContainer = (sectionName) => {
+export const getContainer = (sectionName, hasContainer = true) => {
   const classNameToConcat = 'container';
-  const classNames =['container',]
+  let classNames =['container',]
+  if (!hasContainer) {
+    classNames = undefined
+  }
   return  createContainer(sectionName, classNameToConcat, classNames);
 }
 
