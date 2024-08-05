@@ -42,8 +42,6 @@ export function loadSVG(svgUrl, svgContainer) {
     .catch(error => console.error('Error loading SVG:', error));
 }
 
-
-
 export const createParagraph = (parentName, text, className) => {
   const paragraph = createElement('p');
   paragraph.textContent = text;

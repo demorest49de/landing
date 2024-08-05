@@ -155,7 +155,6 @@
 .hero__big-yellow-circle-block {
   width: 723px;
   padding-left: 63px;
-  border: 1px solid darkmagenta;
   position: relative;
 }
 
@@ -178,3 +177,41 @@
   left: -60px;
   top: -5px;
 }
+
+.hero__city, .hero__path {
+  position: relative;
+}
+
+.hero__city svg{
+  width:1624px;
+  height: 453px;
+  position: absolute;
+  bottom: 0;
+  right: -172px;
+}
+
+.hero__path svg{
+  width:1624px;
+  height: 453px;
+  position: absolute;
+  bottom: 0;
+  right: -172px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
