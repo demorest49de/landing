@@ -21,6 +21,7 @@
 
 .hero {
   padding-top: 26px;
+  overflow-y: hidden;
 }
 
 .hero__container {
@@ -199,10 +200,6 @@
   position: absolute;
   bottom: -12px;
   right: -149px;
-}
-
-.hero__running-line-block{
-
 }
 
 

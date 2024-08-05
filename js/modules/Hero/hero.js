@@ -5,7 +5,6 @@ import {getTextSmallBlock} from "./textSmallBlock.js";
 import {getAnchors} from "./anchors.js";
 import {getBigYellowCircle} from "./bigYellowCircle.js";
 import {getCity} from "./city.js";
-import {getRunningLine} from "./runningLine.js";
 
 const parentName = 'hero';
 const hero = createSection(parentName);
@@ -30,10 +29,8 @@ const bigYellowCircleBlock = getBigYellowCircle(parentName);
 
 const city = getCity(parentName);
 
-const line = getRunningLine(parentName)
-
 wrapper.append(logo, title, textBlock, textSmallBlock, anchorsBlock,);
-heroContainer.append(bigYellowCircleBlock, ...city, line);
+heroContainer.append(bigYellowCircleBlock, ...city, );
 
 
 export const getHero = () => hero;
