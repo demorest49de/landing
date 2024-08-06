@@ -2,11 +2,11 @@ import {createDiv, createFigure, createImg, createSvg} from "../../createElement
 
 export const getCity = (parentName) => {
   
-  // const city = createFigure(parentName, 'city');
+  const city = createFigure(parentName, 'city');
   
   const cityObject = {path: 'public/img/city/city.png', alt: 'город на шахматной доске', className: 'city-image'};
   const cityIMG = createImg(cityObject, parentName);
-  // city.appendChild(cityIMG);
+  city.appendChild(cityIMG);
   
   const path = createFigure(parentName, 'path')
   
@@ -21,7 +21,8 @@ export const getCity = (parentName) => {
   // const path = createSvg(svgPath2, parentName, `path`);
   
   const elements = [
-    cityIMG,
+    // cityIMG,
+    city,
     path
   ];
   
