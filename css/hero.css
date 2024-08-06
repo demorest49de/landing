@@ -164,14 +164,14 @@
 
 .hero__city {
   position: absolute;
-  width: 1623.5px;
+  width: 1920px;
   height: 452.5px;
 }
 
 .hero__city-image {
   position: absolute;
   bottom: -222px;
-  right: -4px;
+  left: 3px;
 }
 
 .hero__path {
