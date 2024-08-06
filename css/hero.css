@@ -137,30 +137,26 @@
 /*#endregion */
 
 
-.hero__big-yellow-circle-block {
-  width: 660px;
-  padding-left: 63px;
-  position: absolute;
-  z-index: -2;
-  right: 370px;
-  top: -73px;
-}
+/*.hero__big-yellow-circle-block {*/
+
+/*  padding-left: 63px;*/
+/*  position: absolute;*/
+/*  z-index: -2;*/
+/*  right: 370px;*/
+/*  top: -73px;*/
+/*}*/
 
 .hero__circle {
-  width: 100%;
+  width: 1920px;
   height: 660px;
-  background-color: #FBCE51;
-  border-radius: 50%;
   position: absolute;
 }
 
 
-#hero__circle-svg {
-  width: 777px;
-  height: 777px;
+.hero__circle-image {
   position: absolute;
-  left: -60px;
-  top: -5px;
+  right: 467px;
+  top: -26px;
 }
 
 .hero__city {
