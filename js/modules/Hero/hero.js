@@ -1,4 +1,4 @@
-import {createComponent, createSection, createDiv, addClass} from "../createComponent.js";
+import {createComponent, createSection, createDiv, addClass, createMainTitle} from "../createComponent.js";
 import {getLogo} from "./ui/logo.js";
 import {getTextBlock} from "./ui/textBlock.js";
 import {getTextSmallBlock} from "./ui/textSmallBlock.js";
@@ -16,10 +16,7 @@ heroContainer.appendChild(wrapper);
 
 const logo = getLogo(parentName);
 
-const title = createComponent('h1');
-title.textContent = 'Превратите уездный город в столицу земного шара';
-addClass(title, parentName, 'title', [`visually-hidden`])
-
+const title = createMainTitle(parentName)
 
 const textBlock = getTextBlock(parentName);
 

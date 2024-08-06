@@ -15,9 +15,12 @@ export const createSection = (sectionName, hasContainer = true) => {
   return section;
 };
 
-export const createMainTitle = (parentName, className) => {
+export const createMainTitle = (parentName) => {
   const title = createComponent('h1');
-  addClass(title, parentName, className);
+  title.textContent = 'Превратите уездный город в столицу земного шара';
+  const classNames = [`visually-hidden`];
+  const className = `title`;
+  addClass(title, parentName, className, classNames);
   return title;
 };
 
