@@ -26,7 +26,7 @@
 .hero__wrapper {
   padding-left: 191.5px;
   height: 673px;
-  width: 733.5px;
+  width: fit-content;
 }
 
 /*#region */
@@ -223,10 +223,14 @@
 
 /*#endregion*/
 
-@media (max-width: 1910px) {
+@media (max-width: 1745px) {
   .hero__container {
     padding: 0 72px;
-  }
+
+
+    .hero__wrapper {
+      padding-left: 0px;
+    }
 
   .hero__logo svg {
     width: 245.17px;
