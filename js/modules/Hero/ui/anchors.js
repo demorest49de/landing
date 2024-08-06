@@ -1,4 +1,4 @@
-import {createAnchors, createButtons, createDiv} from "../createElement.js";
+import {createAnchors, createButtons, createDiv} from "../../components.js";
 
 export const getAnchors = (parentName) => {
   const attributeArray = [

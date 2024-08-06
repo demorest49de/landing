@@ -1,4 +1,4 @@
-import {createSvg} from "../createElement.js";
+import {createSvg} from "../../components.js";
 
 export const getCity = (parentName) => {
   

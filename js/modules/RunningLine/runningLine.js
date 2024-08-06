@@ -1,5 +1,5 @@
-import {createSection} from "../createElement.js";
-import {getConveer} from "./conveer.js";
+import {createSection} from "../components.js";
+import {getConveer} from "./ui/conveer.js";
 
 
 const parentName = 'running-line';

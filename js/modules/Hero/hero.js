@@ -1,10 +1,10 @@
-import {createElement, createSection, createDiv} from "../createElement.js";
-import {getLogo} from "./logo.js";
-import {getTextBlock} from "./textBlock.js";
-import {getTextSmallBlock} from "./textSmallBlock.js";
-import {getAnchors} from "./anchors.js";
-import {getBigYellowCircle} from "./bigYellowCircle.js";
-import {getCity} from "./city.js";
+import {components, createSection, createDiv} from "../components.js";
+import {getLogo} from "./ui/logo.js";
+import {getTextBlock} from "./ui/textBlock.js";
+import {getTextSmallBlock} from "./ui/textSmallBlock.js";
+import {getAnchors} from "./ui/anchors.js";
+import {getBigYellowCircle} from "./ui/bigYellowCircle.js";
+import {getCity} from "./ui/city.js";
 
 const parentName = 'hero';
 const hero = createSection(parentName);
@@ -15,7 +15,7 @@ heroContainer.appendChild(wrapper);
 
 const logo = getLogo(parentName);
 
-const title = createElement('h1');
+const title = components('h1');
 title.textContent = 'Превратите уездный город в столицу земного шара';
 title.classList.add(`${parentName}__title`, `visually-hidden`);
 

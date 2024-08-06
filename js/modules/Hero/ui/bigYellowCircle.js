@@ -1,4 +1,4 @@
-import {createDiv, createSvg} from "../createElement.js";
+import {createDiv, createSvg} from "../../components.js";
 
 export const getBigYellowCircle = (parentName) => {
   

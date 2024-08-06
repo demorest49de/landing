@@ -1,10 +1,10 @@
-import {getContainer} from "./Hero/container.js";
+import {getContainer} from "./Hero/ui/container.js";
 
-export const createElement = (elem) => document.createElement(elem);
+export const components = (elem) => document.createElement(elem);
 
 
 export const createSection = (sectionName, hasContainer = true) => {
-  const section = createElement('section');
+  const section = components('section');
   addClass(section, sectionName, '');
   
     const container = getContainer(sectionName, hasContainer);
@@ -46,21 +46,21 @@ export function loadSVG(svgUrl, svgContainer) {
 }
 
 export const createParagraph = (parentName, text, className) => {
-  const paragraph = createElement('p');
+  const paragraph = components('p');
   paragraph.textContent = text;
   addClass(paragraph, parentName, className);
   return paragraph;
 };
 
 export const createButtons = (parentName, text, className) => {
-  const button = createElement('button');
+  const button = components('button');
   button.innerText = text;
   addClass(button, parentName, className);
   return button;
 };
 
 export const createAnchors = (parentName, attr, className) => {
-  const anchor = createElement('a');
+  const anchor = components('a');
   anchor.textContent = attr.text;
   anchor.href = attr.href;
   addClass(anchor, parentName, className);
@@ -68,7 +68,7 @@ export const createAnchors = (parentName, attr, className) => {
 };
 
 export const createDiv = (parentName, className) => {
-  const div = createElement('div');
+  const div = components('div');
   addClass(div, parentName, className);
   return div;
 };
