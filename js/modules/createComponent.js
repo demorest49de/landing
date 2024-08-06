@@ -35,14 +35,17 @@ export const createSvg = (svgPath, parentName, className) => {
   return svgContainer;
 };
 
-export function loadSVG(svgUrl, svgContainer) {
-  fetch(svgUrl)
-    .then(response => response.text())
-    .then(svgText => {
-      svgContainer.innerHTML = svgText;
-      
-    })
-    .catch(error => console.error('Error loading SVG:', error));
+export async function loadSVG(svgUrl, svgContainer) {
+  try {
+    const response = await fetch(svgUrl);
+    if (!response.ok) {
+      throw new Error(`SVG loading error! Status: ${response.status}`);
+    }
+    const text = await response.text();
+    svgContainer.innerHTML = text;
+  } catch (error) {
+    console.error('Error loading svg:', error);
+  }
 }
 
 export const createImg = (figure, parentName) => {
@@ -57,10 +60,9 @@ export async function loadIMG(imgURL, imgContainer) {
   try {
     const response = await fetch(imgURL);
     if (!response.ok) {
-      throw new Error(`HTTP error! Status: ${response.status}`);
+      throw new Error(`IMG loading error! Status: ${response.status}`);
     }
     
-    debugger
     const blob = await response.blob();
     const imageObjectURL = URL.createObjectURL(blob);
     
