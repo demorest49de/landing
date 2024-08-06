@@ -140,6 +140,7 @@
   width: 1920px;
   height: auto;
   position: absolute;
+  z-index: -2;
 }
 
 .hero__circle-image {
