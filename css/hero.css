@@ -189,35 +189,33 @@
 
 .hero__figures-block {
   position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  top: 0;
+  width: 1920px;
+  height: 700px;
 }
 
 .hero__figure:nth-child(1) {
-  right: 320px;
-  bottom: 16px;
+  right: 478px;
+  bottom: 43px;
   position: absolute;
   z-index: 2;
 }
 
 .hero__figure:nth-child(2) {
-  right: 611px;
-  bottom: 0px;
+  right: 767px;
+  bottom: 25px;
   position: absolute;
   z-index: 2;
 }
 
 .hero__figure:nth-child(3) {
-  right: 784px;
-  top: 242px;
+  right: 941px;
+  bottom: 190px;
   position: absolute;
   z-index: -1;
 }
 
 .hero__figure:nth-child(4) {
-  right: 433px;
+  right: 593px;
   top: 138px;
   position: absolute;
   z-index: -1;
