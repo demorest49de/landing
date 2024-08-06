@@ -1,5 +1,4 @@
 
-
 .hero {
   padding-top: 26px;
   overflow-y: hidden;
@@ -156,7 +155,6 @@
 }
 
 
-
 #hero__circle-svg {
   width: 777px;
   height: 777px;
@@ -166,27 +164,51 @@
 }
 
 .hero__city, .hero__path {
-  position: relative;
+  position: absolute;
   z-index: 1;
 }
 
-.hero__city svg{
-  width:1623.5px;
+.hero__city {
+  width: 1623.5px;
   height: 452.5px;
-  position: absolute;
-  bottom: -10px;
-  right: -171px;
 }
 
-.hero__path svg{
-  width:1603.71px;
+.hero__city-image {
+  position: absolute;
+  bottom: -221px;
+  right: -4px;
+  mix-blend-mode: color-burn;
+}
+
+.hero__path {
+  width: 1603.71px;
   height: 463.82px;
-  position: absolute;
-  bottom: -12px;
-  right: -149px;
 }
 
-.hero__figures-block{
+.hero__path-image {
+  position: absolute;
+  bottom: -210px;
+  right: 0px;
+  mix-blend-mode: color-burn;
+}
+
+/*.hero__city svg{*/
+/*  width:1623.5px;*/
+/*  height: 452.5px;*/
+/*  position: absolute;*/
+/*  bottom: -10px;*/
+/*  right: -171px;*/
+/*}*/
+
+/*.hero__path svg {*/
+/*  width: 1603.71px;*/
+/*  height: 463.82px;*/
+/*  position: absolute;*/
+/*  bottom: -12px;*/
+/*  right: -149px;*/
+/*}*/
+
+.hero__figures-block {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -195,7 +217,7 @@
 }
 
 .hero__figure:nth-child(1) {
-  right:  320px;
+  right: 320px;
   bottom: 16px;
   position: absolute;
   z-index: 2;

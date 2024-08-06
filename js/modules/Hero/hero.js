@@ -1,4 +1,4 @@
-import {createComponent, createSection, createDiv, addClass, createMainTitle} from "../createComponent.js";
+import {createElement, createSection, createDiv, addClass, createMainTitle} from "../createElement.js";
 import {getLogo} from "./ui/logo.js";
 import {getTextBlock} from "./ui/textBlock.js";
 import {getTextSmallBlock} from "./ui/textSmallBlock.js";
@@ -31,6 +31,7 @@ const city = getCity(parentName);
 const figures = getFigures(parentName)
 
 wrapper.append(logo, title, textBlock, textSmallBlock, anchorsBlock,);
+// heroContainer.append(bigYellowCircleBlock, city, figures);
 heroContainer.append(bigYellowCircleBlock, ...city, figures);
 
 

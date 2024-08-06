@@ -1,10 +1,10 @@
 import {getContainer} from "./Hero/ui/container.js";
 
-export const createComponent = (elem) => document.createElement(elem);
+export const createElement = (elem) => document.createElement(elem);
 
 
 export const createSection = (sectionName, hasContainer = true) => {
-  const section = createComponent('section');
+  const section = createElement('section');
   addClass(section, sectionName, '');
   
   const container = getContainer(sectionName, hasContainer);
@@ -16,7 +16,7 @@ export const createSection = (sectionName, hasContainer = true) => {
 };
 
 export const createMainTitle = (parentName) => {
-  const title = createComponent('h1');
+  const title = createElement('h1');
   title.textContent = 'Превратите уездный город в столицу земного шара';
   const classNames = [`visually-hidden`];
   const className = `title`;
@@ -57,7 +57,7 @@ export async function loadSVG(svgUrl, svgContainer) {
 }
 
 export const createImg = (figure, parentName) => {
-  const imgContainer = new Image();
+  const imgContainer = createElement('img');
   imgContainer.alt = figure.alt;
   addClass(imgContainer, parentName, figure.className);
   loadIMG(figure.path, imgContainer);
@@ -81,21 +81,21 @@ export async function loadIMG(imgURL, imgContainer) {
 }
 
 export const createParagraph = (parentName, text, className) => {
-  const paragraph = createComponent('p');
+  const paragraph = createElement('p');
   paragraph.textContent = text;
   addClass(paragraph, parentName, className);
   return paragraph;
 };
 
 export const createButton = (parentName, text, className) => {
-  const button = createComponent('button');
+  const button = createElement('button');
   button.innerText = text;
   addClass(button, parentName, className);
   return button;
 };
 
 export const createAnchor = (parentName, attr, className) => {
-  const anchor = createComponent('a');
+  const anchor = createElement('a');
   anchor.textContent = attr.text;
   anchor.href = attr.href;
   addClass(anchor, parentName, className);
@@ -103,7 +103,13 @@ export const createAnchor = (parentName, attr, className) => {
 };
 
 export const createDiv = (parentName, className) => {
-  const div = createComponent('div');
+  const div = createElement('div');
   addClass(div, parentName, className);
   return div;
+};
+
+export const createFigure = (parentName, className) => {
+  const figure = createElement('figure');
+  addClass(figure, parentName, className);
+  return figure;
 };
