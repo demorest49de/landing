@@ -15,6 +15,11 @@ export const createSection = (sectionName, hasContainer = true) => {
   return section;
 };
 
+export const createMainTitle = (parentName, className) => {
+  const title = createComponent('h1');
+  addClass(title, parentName, className);
+  return title;
+};
 
 export const addClass = (element, parentName, className, classNames = undefined) => {
   if (typeof className === 'string' && className.length > 0 && classNames && Array.isArray(classNames)) {

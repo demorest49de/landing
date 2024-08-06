@@ -9,7 +9,7 @@ export const getCity = (parentName) => {
   const svgPath2 = 'public/img/city/path.svg';
   const path = createSvg(svgPath2, parentName, `path`);
   const elements = [
-    // city,
+    city,
     path
   ];
   

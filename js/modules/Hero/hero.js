@@ -1,4 +1,4 @@
-import {createComponent, createSection, createDiv} from "../createComponent.js";
+import {createComponent, createSection, createDiv, addClass} from "../createComponent.js";
 import {getLogo} from "./ui/logo.js";
 import {getTextBlock} from "./ui/textBlock.js";
 import {getTextSmallBlock} from "./ui/textSmallBlock.js";
@@ -18,7 +18,7 @@ const logo = getLogo(parentName);
 
 const title = createComponent('h1');
 title.textContent = 'Превратите уездный город в столицу земного шара';
-title.classList.add(`${parentName}__title`, `visually-hidden`);
+addClass(title, parentName, 'title', [`visually-hidden`])
 
 
 const textBlock = getTextBlock(parentName);

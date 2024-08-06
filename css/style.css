@@ -1,5 +1,6 @@
 @import "normalize.css";
 @import "global.css";
+@import "utility.css";
 @import "basic.css";
 @import "hero.css";
 @import "running-line.css";
