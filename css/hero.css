@@ -140,6 +140,7 @@
   width: 723px;
   padding-left: 63px;
   position: relative;
+  z-index: -2;
 }
 
 .hero__circle {
@@ -163,21 +164,17 @@
   top: -5px;
 }
 
-.hero__city, .hero__path {
+.hero__path {
   position: absolute;
   z-index: 1;
 }
 
-.hero__city {
-  width: 1623.5px;
-  height: 452.5px;
-}
-
 .hero__city-image {
+  max-width: 1623.5px;
+  max-height: 452.5px;
   position: absolute;
-  bottom: -221px;
-  right: -4px;
-  mix-blend-mode: color-burn;
+  bottom: -1px;
+  right: 134px;
 }
 
 .hero__path {
@@ -189,24 +186,7 @@
   position: absolute;
   bottom: -210px;
   right: 0px;
-  mix-blend-mode: color-burn;
 }
-
-/*.hero__city svg{*/
-/*  width:1623.5px;*/
-/*  height: 452.5px;*/
-/*  position: absolute;*/
-/*  bottom: -10px;*/
-/*  right: -171px;*/
-/*}*/
-
-/*.hero__path svg {*/
-/*  width: 1603.71px;*/
-/*  height: 463.82px;*/
-/*  position: absolute;*/
-/*  bottom: -12px;*/
-/*  right: -149px;*/
-/*}*/
 
 .hero__figures-block {
   position: absolute;
@@ -234,12 +214,14 @@
   right: 784px;
   top: 242px;
   position: absolute;
+  z-index: -1;
 }
 
 .hero__figure:nth-child(4) {
   right: 433px;
   top: 138px;
   position: absolute;
+  z-index: -1;
 }
 
 
