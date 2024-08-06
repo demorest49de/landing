@@ -1,4 +1,4 @@
-import {createAnchors, createButtons, createDiv} from "../../components.js";
+import {createAnchor, createButton, createDiv} from "../../createComponent.js";
 
 export const getAnchors = (parentName) => {
   const attributeArray = [
@@ -12,7 +12,7 @@ export const getAnchors = (parentName) => {
     },];
   
   const buttons = attributeArray.map(attr => {
-    return createAnchors(parentName, attr, 'link');
+    return createAnchor(parentName, attr, 'link');
   });
   
   const buttonsBlock = createDiv(parentName, "link-block");

@@ -1,4 +1,4 @@
-import {createSvg} from "../../components.js";
+import {createSvg} from "../../createComponent.js";
 
 export const  getLogo =(parentName)=>{
   

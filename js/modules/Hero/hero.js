@@ -1,10 +1,11 @@
-import {components, createSection, createDiv} from "../components.js";
+import {createComponent, createSection, createDiv} from "../createComponent.js";
 import {getLogo} from "./ui/logo.js";
 import {getTextBlock} from "./ui/textBlock.js";
 import {getTextSmallBlock} from "./ui/textSmallBlock.js";
 import {getAnchors} from "./ui/anchors.js";
 import {getBigYellowCircle} from "./ui/bigYellowCircle.js";
 import {getCity} from "./ui/city.js";
+import {getFigures} from "./ui/figures.js";
 
 const parentName = 'hero';
 const hero = createSection(parentName);
@@ -15,7 +16,7 @@ heroContainer.appendChild(wrapper);
 
 const logo = getLogo(parentName);
 
-const title = components('h1');
+const title = createComponent('h1');
 title.textContent = 'Превратите уездный город в столицу земного шара';
 title.classList.add(`${parentName}__title`, `visually-hidden`);
 
@@ -30,8 +31,10 @@ const bigYellowCircleBlock = getBigYellowCircle(parentName);
 
 const city = getCity(parentName);
 
+const figures = getFigures(parentName)
+
 wrapper.append(logo, title, textBlock, textSmallBlock, anchorsBlock,);
-heroContainer.append(bigYellowCircleBlock, ...city, );
+heroContainer.append(bigYellowCircleBlock, ...city, figures);
 
 
 export const getHero = () => hero;

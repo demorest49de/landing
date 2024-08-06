@@ -1,15 +1,15 @@
 import {getContainer} from "./Hero/ui/container.js";
 
-export const components = (elem) => document.createElement(elem);
+export const createComponent = (elem) => document.createElement(elem);
 
 
 export const createSection = (sectionName, hasContainer = true) => {
-  const section = components('section');
+  const section = createComponent('section');
   addClass(section, sectionName, '');
   
-    const container = getContainer(sectionName, hasContainer);
-    section.container = container;
-    section.append(container);
+  const container = getContainer(sectionName, hasContainer);
+  section.container = container;
+  section.append(container);
   
   
   return section;
@@ -45,22 +45,47 @@ export function loadSVG(svgUrl, svgContainer) {
     .catch(error => console.error('Error loading SVG:', error));
 }
 
+export const createImg = (figure, parentName) => {
+  const imgContainer = new Image();
+  imgContainer.alt = figure.alt;
+  addClass(imgContainer, parentName, figure.className);
+  loadIMG(figure.path, imgContainer);
+  return imgContainer;
+};
+
+export async function loadIMG(imgURL, imgContainer) {
+  try {
+    const response = await fetch(imgURL);
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+    
+    debugger
+    const blob = await response.blob();
+    const imageObjectURL = URL.createObjectURL(blob);
+    
+    imgContainer.src = imageObjectURL;
+  } catch (error) {
+    console.error('Error loading image:', error);
+  }
+}
+
 export const createParagraph = (parentName, text, className) => {
-  const paragraph = components('p');
+  const paragraph = createComponent('p');
   paragraph.textContent = text;
   addClass(paragraph, parentName, className);
   return paragraph;
 };
 
-export const createButtons = (parentName, text, className) => {
-  const button = components('button');
+export const createButton = (parentName, text, className) => {
+  const button = createComponent('button');
   button.innerText = text;
   addClass(button, parentName, className);
   return button;
 };
 
-export const createAnchors = (parentName, attr, className) => {
-  const anchor = components('a');
+export const createAnchor = (parentName, attr, className) => {
+  const anchor = createComponent('a');
   anchor.textContent = attr.text;
   anchor.href = attr.href;
   addClass(anchor, parentName, className);
@@ -68,7 +93,7 @@ export const createAnchors = (parentName, attr, className) => {
 };
 
 export const createDiv = (parentName, className) => {
-  const div = components('div');
+  const div = createComponent('div');
   addClass(div, parentName, className);
   return div;
 };

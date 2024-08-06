@@ -1,4 +1,4 @@
-import {createSection} from "../components.js";
+import {createSection} from "../createComponent.js";
 import {getConveer} from "./ui/conveer.js";
 
 

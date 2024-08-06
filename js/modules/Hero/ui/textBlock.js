@@ -1,4 +1,4 @@
-import {createDiv, createParagraph} from "../../components.js";
+import {createDiv, createParagraph} from "../../createComponent.js";
 
 export const getTextBlock = (parentName) => {
   const textArray = ['Превратите уездный город', 'в столицу', 'земного шара'];
