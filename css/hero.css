@@ -133,6 +133,7 @@
   color: #FFFFFF;
   transition: all 0.3s ease;
 }
+
 /*#endregion */
 
 
@@ -162,20 +163,21 @@
   top: -5px;
 }
 
-.hero__path {
+.hero__city {
   position: absolute;
-  z-index: 1;
+  width: 1623.5px;
+  height: 452.5px;
 }
 
 .hero__city-image {
-  max-width: 1623.5px;
-  max-height: 452.5px;
   position: absolute;
-  bottom: -1px;
-  right: 134px;
+  bottom: -222px;
+  right: -4px;
 }
 
 .hero__path {
+  position: absolute;
+  z-index: 1;
   width: 1603.71px;
   height: 463.82px;
 }
@@ -221,6 +223,7 @@
   position: absolute;
   z-index: -1;
 }
+
 /*#endregion*/
 
 @media (max-width: 1910px) {
@@ -228,7 +231,7 @@
     padding: 0 72px;
   }
 
-  .hero__logo svg{
+  .hero__logo svg {
     width: 245.17px;
     height: 36px;
   }
