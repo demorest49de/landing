@@ -134,7 +134,6 @@
   transition: all 0.3s ease;
 }
 
-/*#endregion*/
 
 .hero__big-yellow-circle-block {
   width: 723px;
@@ -223,8 +222,18 @@
   position: absolute;
   z-index: -1;
 }
+/*#endregion*/
 
+@media (max-width: 2400px) {
+  .hero__container {
+    padding: 0 72px;
+  }
 
+  .hero__logo svg{
+    width: 245.17px;
+    height: 36px;
+  }
+}
 
 
 
