@@ -9,9 +9,15 @@ export const getBigYellowCircle = (parentName) => {
   const circleIMG = createImg(circleObject, parentName);
   circle.appendChild(circleIMG);
   
-  // const svgPath = 'public/img/yellow-circle.svg';
-  // const circle = createSvg(svgPath, parentName, `circle`);
-  // block.appendChild(circle);
+  const words = createFigure(parentName, `words`);
   
-  return circle;
+  const wordsObject = {path: 'public/img/yellow-circle/circle-words.png', alt: 'буквы по кругу', className: 'words-image'};
+  const wordsIMG = createImg(wordsObject, parentName);
+  words.appendChild(wordsIMG);
+  const elements = [
+    circle,
+    words
+  ];
+  
+  return elements;
 };

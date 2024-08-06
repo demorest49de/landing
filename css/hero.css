@@ -1,7 +1,7 @@
 
 .hero {
   padding-top: 26px;
-  overflow-y: hidden;
+  overflow: hidden;
 }
 
 .hero__container {
@@ -136,27 +136,29 @@
 
 /*#endregion */
 
-
-/*.hero__big-yellow-circle-block {*/
-
-/*  padding-left: 63px;*/
-/*  position: absolute;*/
-/*  z-index: -2;*/
-/*  right: 370px;*/
-/*  top: -73px;*/
-/*}*/
-
 .hero__circle {
   width: 1920px;
-  height: 660px;
+  height: auto;
   position: absolute;
 }
-
 
 .hero__circle-image {
   position: absolute;
   right: 467px;
   top: -26px;
+}
+
+.hero__words {
+  width: 1920px;
+  height: auto;
+  position: absolute;
+}
+
+.hero__words-image {
+  position: absolute;
+  right: 408px;
+  top: -26px;
+  mix-blend-mode: overlay;
 }
 
 .hero__city {

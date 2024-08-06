@@ -24,7 +24,7 @@ const textSmallBlock = getTextSmallBlock(parentName);
 
 const anchorsBlock = getAnchors(parentName);
 
-const bigYellowCircleBlock = getBigYellowCircle(parentName);
+const yellowCircle = getBigYellowCircle(parentName);
 
 const city = getCity(parentName);
 
@@ -32,7 +32,7 @@ const figures = getFigures(parentName)
 
 wrapper.append(logo, title, textBlock, textSmallBlock, anchorsBlock,);
 // heroContainer.append(bigYellowCircleBlock, city, figures);
-heroContainer.append(bigYellowCircleBlock, ...city, figures);
+heroContainer.append(...yellowCircle, ...city, figures);
 
 
 export const getHero = () => hero;
