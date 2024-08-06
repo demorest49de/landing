@@ -23,15 +23,15 @@
   mix-blend-mode: color-burn;
 }
 
-
 .hero__wrapper {
   padding-left: 191.5px;
   height: 673px;
-  /*width: fit-content;*/
   width: 733.5px;
 }
 
 /*#region */
+
+/*#region mainblock*/
 
 .hero__logo {
   margin-bottom: 59px;
@@ -133,25 +133,24 @@
   color: #FFFFFF;
   transition: all 0.3s ease;
 }
+/*#endregion */
 
 
 .hero__big-yellow-circle-block {
-  width: 723px;
+  width: 660px;
   padding-left: 63px;
-  position: relative;
+  position: absolute;
   z-index: -2;
+  right: 370px;
+  top: -73px;
 }
 
 .hero__circle {
-  width: 660px;
+  width: 100%;
   height: 660px;
   background-color: #FBCE51;
   border-radius: 50%;
   position: absolute;
-  top: -73px;
-  left: 60px;
-  right: 0;
-  bottom: 0;
 }
 
 
@@ -224,7 +223,7 @@
 }
 /*#endregion*/
 
-@media (max-width: 2400px) {
+@media (max-width: 1910px) {
   .hero__container {
     padding: 0 72px;
   }
