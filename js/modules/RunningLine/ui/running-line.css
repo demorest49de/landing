@@ -9,9 +9,10 @@
   white-space: nowrap;
   height: 60px;
   background-color: #F54932;
+  overflow: hidden;
 }
 
-.running-line__conveer {
+.running-line__conveer-block{
   display: inline-block;
   animation: running-line__conveer 30s linear infinite;
   width: fit-content;
@@ -22,11 +23,18 @@
   text-transform: uppercase;
   font-feature-settings: 'pnum' on, 'lnum' on;
   color: #FFFFFF;
+  padding-left: 100%;
 }
+
+.running-line__conveer {
+  padding-right: 100%;
+}
+
+
 
 @keyframes running-line__conveer {
   0% {
-    transform: translateX(100%);
+    transform: translateX(0%);
   }
   100% {
     transform: translateX(-100%);
