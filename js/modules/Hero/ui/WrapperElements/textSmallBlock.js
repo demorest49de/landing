@@ -1,4 +1,4 @@
-import {createDiv, createParagraph} from "../../createElement.js";
+import {createDiv, createParagraph} from "../../../createElement.js";
 
 export const getTextSmallBlock = (parentName) => {
   const textArray = ['Оплатите взнос на телеграммы для организации',

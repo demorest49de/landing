@@ -1,4 +1,4 @@
-import {createDiv, createImg} from "../../createElement.js";
+import {createDiv, createImg} from "../../../createElement.js";
 
 export const getFigures = (parentName) => {
   

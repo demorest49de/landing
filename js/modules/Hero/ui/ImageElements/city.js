@@ -1,4 +1,4 @@
-import {createDiv, createFigure, createImg, createSvg} from "../../createElement.js";
+import {createDiv, createFigure, createImg, createSvg} from "../../../createElement.js";
 
 export const getCity = (parentName) => {
   
