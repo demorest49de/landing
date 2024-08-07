@@ -12,18 +12,12 @@ export const getFigures = (parentName) => {
   const korolIMG = createImg(korol, parentName);
   const korolevaIMG = createImg(koroleva, parentName);
   
-  const figureBlock = createDiv(parentName, 'figures-block');
-  
   const elements = [
     peshkaIMG,
     slonIMG,
     korolIMG,
     korolevaIMG,
   ];
-  
-  elements.forEach(element => {
-    figureBlock.appendChild(element);
-  });
   
   return elements;
 };
