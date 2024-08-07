@@ -200,9 +200,16 @@
 
 /*#endregion*/
 
-@media (max-width: 1900px) {
+@media (max-width: 1919px) {
   .hero__container {
     padding: 0 72px;
+  }
+
+  .hero__elements {
+    position: absolute;
+    max-width: 2103px;
+    width: 110%;
+    height: 700px;
   }
 
   .hero__wrapper {
@@ -215,13 +222,19 @@
   }
 }
 
-@media (max-width: 1680px) {
+@media (max-width: 1745px) {
   .hero__elements {
-
-    width: 1729px;
+    max-width: 2102px;
+    width: 121%;
   }
 }
 
+@media (max-width: 1425px) {
+  .hero__elements {
+    max-width: unset;
+    width: 1729px;
+  }
+}
 
 
 
