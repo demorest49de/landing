@@ -9,12 +9,14 @@ const heroContainer = hero.container;
 const wrapper = createDiv(parentName, "wrapper");
 heroContainer.appendChild(wrapper);
 
+const elements = createDiv(parentName, "elements");
+heroContainer.appendChild(elements);
+
 const wrapperElements = getWrapperElements(parentName)
 const imageElements = getImageElements(parentName)
 
 
 wrapper.append(...wrapperElements);
-heroContainer.append(...imageElements);
-
+elements.append(...imageElements);
 
 export const getHero = () => hero;

@@ -25,5 +25,5 @@ export const getFigures = (parentName) => {
     figureBlock.appendChild(element);
   });
   
-  return figureBlock;
+  return elements;
 };

@@ -9,5 +9,5 @@ export function getImageElements(parentName) {
   
   const figures = getFigures(parentName)
   
-  return[...yellowCircle, ...city, figures];
+  return[...yellowCircle, ...city, ...figures];
 }

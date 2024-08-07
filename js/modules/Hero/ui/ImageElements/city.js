@@ -16,8 +16,8 @@ export const getCity = (parentName) => {
   
   
   const elements = [
-    city,
-    path
+    cityIMG,
+    pathIMG
   ];
   
   // cityBlock.appendChild(city)

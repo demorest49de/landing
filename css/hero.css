@@ -29,6 +29,12 @@
   width: fit-content;
 }
 
+.hero__elements {
+  position: absolute;
+  width: 1920px;
+  height: 700px;
+}
+
 /*#region */
 
 /*#region mainblock*/
@@ -136,23 +142,11 @@
 
 /*#endregion */
 
-.hero__circle {
-  width: 1920px;
-  height: auto;
-  position: absolute;
-  z-index: -2;
-}
-
 .hero__circle-image {
   position: absolute;
   right: 467px;
   top: -26px;
-}
-
-.hero__words {
-  width: 1920px;
-  height: auto;
-  position: absolute;
+  z-index: -3;
 }
 
 .hero__words-image {
@@ -160,65 +154,48 @@
   right: 408px;
   top: -26px;
   mix-blend-mode: overlay;
-}
-
-.hero__city {
-  position: absolute;
-  width: 1920px;
-  height: 452.5px;
+  z-index: -3;
 }
 
 .hero__city-image {
   position: absolute;
-  bottom: -222px;
-  left: 3px;
-}
-
-.hero__path {
-  position: absolute;
-  z-index: 1;
-  width: 1603.71px;
-  height: 463.82px;
+  top: 244px;
+  right: 293px;
+  z-index: -1;
 }
 
 .hero__path-image {
   position: absolute;
-  bottom: -210px;
-  right: 0px;
+  top: 233px;
+  right: 317px;
 }
 
-.hero__figures-block {
+.hero__figure:nth-last-child(1) {
+  right: 593px;
+  top: 138px;
   position: absolute;
-  width: 1920px;
-  height: 700px;
+  z-index: -2;
 }
 
-.hero__figure:nth-child(1) {
-  right: 478px;
-  bottom: 43px;
+.hero__figure:nth-last-child(2) {
+  right: 941px;
+  bottom: 190px;
   position: absolute;
-  z-index: 2;
+  z-index: -2;
 }
 
-.hero__figure:nth-child(2) {
+.hero__figure:nth-last-child(3) {
   right: 767px;
   bottom: 25px;
   position: absolute;
   z-index: 2;
 }
 
-.hero__figure:nth-child(3) {
-  right: 941px;
-  bottom: 190px;
+.hero__figure:nth-last-child(4) {
+  right: 478px;
+  bottom: 43px;
   position: absolute;
-  z-index: -1;
-}
-
-.hero__figure:nth-child(4) {
-  right: 593px;
-  top: 138px;
-  position: absolute;
-  z-index: -1;
+  z-index: 2;
 }
 
 /*#endregion*/
@@ -228,9 +205,9 @@
     padding: 0 72px;
   }
 
-    .hero__wrapper {
-      padding-left: 0px;
-    }
+  .hero__wrapper {
+    padding-left: 0px;
+  }
 
   .hero__logo svg {
     width: 245.17px;
@@ -239,7 +216,10 @@
 }
 
 @media (max-width: 1680px) {
+  .hero__elements {
 
+    width: 1729px;
+  }
 }
 
 

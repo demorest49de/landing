@@ -15,8 +15,8 @@ export const getBigYellowCircle = (parentName) => {
   const wordsIMG = createImg(wordsObject, parentName);
   words.appendChild(wordsIMG);
   const elements = [
-    circle,
-    words
+    circleIMG,
+    wordsIMG
   ];
   
   return elements;
