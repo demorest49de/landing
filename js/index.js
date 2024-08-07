@@ -8,3 +8,4 @@ import {renderLanding} from './modules/render.js';
 
     window.init = init;
 }
+//
