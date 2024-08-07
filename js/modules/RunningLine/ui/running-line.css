@@ -23,14 +23,12 @@
   text-transform: uppercase;
   font-feature-settings: 'pnum' on, 'lnum' on;
   color: #FFFFFF;
-  padding-left: 100%;
+  padding-left: 101%;
 }
 
 .running-line__conveer {
-  padding-right: 100%;
+  padding-right: 101%;
 }
-
-
 
 @keyframes running-line__conveer {
   0% {
