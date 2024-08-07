@@ -1,11 +1,14 @@
 import {getContainer} from "../ui/container.js";
 
-export const createElement = (elem) => document.createElement(elem);
+export const createElement = (elementName, parentName, className = '', classNames = undefined) => {
+  const elem = document.createElement(elementName);
+  addClass(elem, parentName, className, classNames);
+  return elem;
+};
 
 
 export const createSection = (sectionName, hasContainer = true) => {
-  const section = createElement('section');
-  addClass(section, sectionName, '');
+  const section = createElement('section', sectionName);
   
   const container = getContainer(sectionName, hasContainer);
   section.container = container;
@@ -16,11 +19,10 @@ export const createSection = (sectionName, hasContainer = true) => {
 };
 
 export const createMainTitle = (parentName) => {
-  const title = createElement('h1');
-  title.textContent = 'Превратите уездный город в столицу земного шара';
   const classNames = [`visually-hidden`];
   const className = `title`;
-  addClass(title, parentName, className, classNames);
+  const title = createElement('h1', parentName, className, classNames);
+  title.textContent = 'Превратите уездный город в столицу земного шара';
   return title;
 };
 
@@ -57,9 +59,8 @@ export async function loadSVG(svgUrl, svgContainer) {
 }
 
 export const createImg = (figure, parentName) => {
-  const imgContainer = createElement('img');
+  const imgContainer = createElement('img', parentName, figure.className);
   imgContainer.alt = figure.alt;
-  addClass(imgContainer, parentName, figure.className);
   loadIMG(figure.path, imgContainer);
   return imgContainer;
 };
@@ -81,35 +82,30 @@ export async function loadIMG(imgURL, imgContainer) {
 }
 
 export const createParagraph = (parentName, text, className) => {
-  const paragraph = createElement('p');
+  const paragraph = createElement('p', parentName, className);
   paragraph.textContent = text;
-  addClass(paragraph, parentName, className);
   return paragraph;
 };
 
 export const createButton = (parentName, text, className) => {
-  const button = createElement('button');
+  const button = createElement('button', parentName, className);
   button.innerText = text;
-  addClass(button, parentName, className);
   return button;
 };
 
 export const createAnchor = (parentName, attr, className) => {
-  const anchor = createElement('a');
+  const anchor = createElement('a', parentName, className);
   anchor.textContent = attr.text;
   anchor.href = attr.href;
-  addClass(anchor, parentName, className);
   return anchor;
 };
 
 export const createDiv = (parentName, className) => {
-  const div = createElement('div');
-  addClass(div, parentName, className);
+  const div = createElement('div', parentName, className);
   return div;
 };
 
 export const createFigure = (parentName, className) => {
-  const figure = createElement('figure');
-  addClass(figure, parentName, className);
+  const figure = createElement('figure', parentName, className);
   return figure;
 };

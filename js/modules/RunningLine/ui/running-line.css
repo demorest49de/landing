@@ -15,7 +15,7 @@
 
 .running-line__conveer {
   display: inline-block;
-  animation: running-line__conveer 30s linear infinite;
+  /*animation: running-line__conveer 30s linear infinite;*/
   width: fit-content;
   font-family: 'Merriweather';
   font-weight: 400;

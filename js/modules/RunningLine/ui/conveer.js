@@ -1,9 +1,10 @@
-import {createDiv} from "../../Hero/Components/createElement.js";
+import {createDiv, createElement} from "../../Hero/Components/createElement.js";
 
 export const getConveer = (parentName) => {
   
   const block = createDiv(parentName, 'block');
-  const conveer = createDiv(parentName, 'conveer');
+  const conveerBlock = createDiv(parentName, 'conveer-block');
+  const conveer = createElement('span');
   const textArray = [
     'Дело помощи утопающим — дело рук самих утопающих!',
     'Шахматы двигают вперед не только культуру, но и экономику!',
