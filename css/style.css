@@ -2,5 +2,5 @@
 @import "global.css";
 @import "utility.css";
 @import "basic.css";
-@import "hero.css";
-@import "running-line.css";
+@import "../js/modules/Hero/ui/hero.css";
+@import "../js/modules/RunningLine/ui/running-line.css";

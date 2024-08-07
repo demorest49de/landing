@@ -1,4 +1,4 @@
-import {getContainer} from "./Hero/ui/container.js";
+import {getContainer} from "../ui/container.js";
 
 export const createElement = (elem) => document.createElement(elem);
 

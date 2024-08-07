@@ -1,4 +1,4 @@
-import {createFigure, createImg} from "../../../createElement.js";
+import {createFigure, createImg} from "../../Components/createElement.js";
 
 export const getBigYellowCircle = (parentName) => {
   

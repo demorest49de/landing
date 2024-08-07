@@ -1,5 +1,5 @@
 import {getLogo} from "./logo.js";
-import {createMainTitle} from "../../../createElement.js";
+import {createMainTitle} from "../../Components/createElement.js";
 import {getTextBlock} from "./textBlock.js";
 import {getTextSmallBlock} from "./textSmallBlock.js";
 import {getAnchors} from "./anchors.js";

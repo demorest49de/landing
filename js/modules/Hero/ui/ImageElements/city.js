@@ -1,4 +1,4 @@
-import {createImg} from "../../../createElement.js";
+import {createImg} from "../../Components/createElement.js";
 
 export const getCity = (parentName) => {
   

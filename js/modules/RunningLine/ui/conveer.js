@@ -1,4 +1,4 @@
-import {createDiv} from "../../createElement.js";
+import {createDiv} from "../../Hero/Components/createElement.js";
 
 export const getConveer = (parentName) => {
   

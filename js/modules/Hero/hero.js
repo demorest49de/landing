@@ -1,4 +1,4 @@
-import { createSection, createDiv} from "../createElement.js";
+import { createSection, createDiv} from "./Components/createElement.js";
 import {getWrapperElements} from "./ui/WrapperElements/WrapperElements.js";
 import {getImageElements} from "./ui/ImageElements/ImageElements.js";
 

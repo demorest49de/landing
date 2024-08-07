@@ -1,4 +1,4 @@
-import {addClass, createDiv} from "../../createElement.js";
+import {addClass, createDiv} from "../Components/createElement.js";
 
 
 export const getContainer = (sectionName, hasContainer = true) => {

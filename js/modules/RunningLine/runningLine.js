@@ -1,10 +1,10 @@
-import {createSection} from "../createElement.js";
+import {createSection} from "../Hero/Components/createElement.js";
 import {getConveer} from "./ui/conveer.js";
 
 
 const parentName = 'running-line';
 
-const line = createSection(parentName, false);
+const line = createSection(parentName);
 const lineContainer = line.container;
 
 
