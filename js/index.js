@@ -6,5 +6,6 @@ import {renderLanding} from './modules/render.js';
         renderLanding(app);
     };
 
+    
     window.init = init;
 }
